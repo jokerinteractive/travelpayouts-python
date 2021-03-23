@@ -17,7 +17,7 @@ def _sorted_glue(od):
         else:
             vals.append(v)
 
-    return ':'.join(vals)
+    return ':'.join(str(x) for x in vals)
 
 
 def _signature(body, token):
