@@ -63,3 +63,9 @@ def search_results(client, search_uuid):
     data = client._get(API_V1_URL + "/flight_search_results", params)
 
     return data
+
+
+def get_link(client, link, search_uuid):
+    data = client._get(f"{API_V1_URL}/flight_searches/{search_uuid}/clicks/{link}.json")
+
+    return data

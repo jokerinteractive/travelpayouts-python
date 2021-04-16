@@ -61,6 +61,7 @@ from travelpayouts.v1 import airline_directions
 from travelpayouts.v1 import city_directions
 from travelpayouts.flights import search
 from travelpayouts.flights import search_results
+from travelpayouts.flights import get_link
 
 
 def make_api_method(func):
@@ -104,3 +105,4 @@ Client.airline_directions = make_api_method(airline_directions)
 Client.city_directions = make_api_method(city_directions)
 Client.search = make_api_method(search)
 Client.search_results = make_api_method(search_results)
+Client.get_link = make_api_method(get_link)
