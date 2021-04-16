@@ -12,14 +12,14 @@ with open('README.rst', 'r') as r:
     readme = r.read()
 
 download_url = (
-    'https://github.com/karellens/travelpayouts-python/archive/%s.tar.gz'
+    'https://github.com/jokerinteractive/travelpayouts-python/archive/%s.tar.gz'
 )
 
 setup(name='travelpayouts',
       version=version,
       description='Travel Payouts API Wrapper',
       long_description=readme,
-      url='http://github.com/karellens/travelpayouts-python',
+      url='http://github.com/jokerinteractive/travelpayouts-python',
       download_url=download_url % version,
       author='Denis Bozhenkov',
       author_email='mm@karellens.com',
